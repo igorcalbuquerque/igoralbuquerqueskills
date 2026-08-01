@@ -12,7 +12,7 @@ These skills are practical, direct, and provider-agnostic. They do not depend on
 
 ## Available Skills
 
-- `code-review`: pragmatic code review focused on bugs, regressions, security risks, missing tests, and maintainability issues.
+- `the-code-reviewer`: pragmatic code review focused on bugs, regressions, security risks, missing tests, and maintainability issues.
 - `llm-style-cleanup`: edits AI-generated or AI-assisted text to remove LLM writing patterns, overused em dashes, generic filler, and formulaic phrasing without changing the meaning.
 - `meeting-transcript-summary`: direct, ADHD-friendly meeting transcript summaries with key points, topics, decisions, action items, open questions, and next steps.
 - `pragmatic-planning`: direct, ADHD-friendly planning that turns messy ideas into clear next actions.
@@ -54,7 +54,7 @@ git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git
 Then copy the content of the skill you want into your ChatGPT instructions, a project instruction, or the start of a conversation:
 
 ```text
-Use the instructions from code-review/SKILL.md to review this diff.
+Use the instructions from the-code-reviewer/SKILL.md to review this diff.
 ```
 
 ### Codex
@@ -68,7 +68,7 @@ git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git
 Example prompt:
 
 ```text
-Use igoralbuquerqueskills/code-review/SKILL.md as review guidance for this change.
+Use igoralbuquerqueskills/the-code-reviewer/SKILL.md as review guidance for this change.
 ```
 
 ### Other Assistants
@@ -113,7 +113,7 @@ The assistant should choose the right skill when your request matches the skill 
 Each skill lives in its own directory with a `SKILL.md` file:
 
 ```text
-code-review/SKILL.md
+the-code-reviewer/SKILL.md
 llm-style-cleanup/SKILL.md
 meeting-transcript-summary/SKILL.md
 pragmatic-planning/SKILL.md
@@ -148,7 +148,7 @@ As skills foram escritas para serem práticas, diretas e independentes de proved
 
 ## Skills Disponíveis
 
-- `code-review`: revisão de código pragmática, focada em bugs, regressões, riscos de segurança, testes ausentes e problemas de manutenção.
+- `the-code-reviewer`: revisão de código pragmática, focada em bugs, regressões, riscos de segurança, testes ausentes e problemas de manutenção.
 - `llm-style-cleanup`: edição de textos gerados ou assistidos por IA para remover vícios de linguagem de LLM, travessões em excesso, termos genéricos e frases formulaicas sem mudar o significado.
 - `meeting-transcript-summary`: resumo direto e amigável para TDAH de transcrições de reuniões, com pontos principais, tópicos, decisões, tarefas, perguntas em aberto e próximos passos.
 - `pragmatic-planning`: planejamento direto e amigável para TDAH que transforma ideias confusas em próximas ações claras.
@@ -190,7 +190,7 @@ git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git
 Depois copie o conteúdo da skill desejada para as instruções do ChatGPT, instruções de projeto ou início de uma conversa:
 
 ```text
-Use as instruções de code-review/SKILL.md para revisar este diff.
+Use as instruções de the-code-reviewer/SKILL.md para revisar este diff.
 ```
 
 ### Codex
@@ -204,7 +204,7 @@ git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git
 Exemplo de prompt:
 
 ```text
-Use igoralbuquerqueskills/code-review/SKILL.md como guia de revisão para esta alteração.
+Use igoralbuquerqueskills/the-code-reviewer/SKILL.md como guia de revisão para esta alteração.
 ```
 
 ### Outros Assistentes
@@ -249,7 +249,7 @@ O assistente deve escolher a skill certa quando o pedido combinar com a descriç
 Cada skill fica em uma pasta própria com um arquivo `SKILL.md`:
 
 ```text
-code-review/SKILL.md
+the-code-reviewer/SKILL.md
 llm-style-cleanup/SKILL.md
 meeting-transcript-summary/SKILL.md
 pragmatic-planning/SKILL.md
