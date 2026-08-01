@@ -13,6 +13,7 @@ These skills are practical, direct, and provider-agnostic. They avoid depending 
 ## Available Skills
 
 - `code-review`: pragmatic code review focused on bugs, regressions, security risks, missing tests, and real maintainability issues.
+- `llm-style-cleanup`: edits AI-generated or AI-assisted text to remove LLM writing patterns, overused em dashes, generic filler, and formulaic phrasing while preserving meaning.
 - `meeting-transcript-summary`: direct, ADHD-friendly meeting transcript summaries with key points, topics, decisions, action items, open questions, and next steps.
 - `pragmatic-planning`: direct, ADHD-friendly planning that turns messy ideas into clear next actions.
 
@@ -100,6 +101,7 @@ After installation, ask your assistant normally:
 
 - "Review this PR."
 - "Do a code review of this diff."
+- "Remove the LLM-style wording from this draft."
 - "Summarize this meeting transcript into topics, decisions, and action items."
 - "Help me turn these ideas into a plan."
 - "Break this project into simple next actions."
@@ -112,6 +114,7 @@ Each skill lives in its own directory with a `SKILL.md` file:
 
 ```text
 code-review/SKILL.md
+llm-style-cleanup/SKILL.md
 meeting-transcript-summary/SKILL.md
 pragmatic-planning/SKILL.md
 ```
@@ -146,6 +149,7 @@ As skills foram escritas para serem práticas, diretas e independentes de proved
 ## Skills Disponíveis
 
 - `code-review`: revisão de código pragmática, focada em bugs, regressões, riscos de segurança, testes ausentes e problemas reais de manutenção.
+- `llm-style-cleanup`: edição de textos gerados ou assistidos por IA para remover vícios de linguagem de LLM, travessões em excesso, enchimento genérico e frases formulaicas sem mudar o significado.
 - `meeting-transcript-summary`: resumo direto e amigável para TDAH de transcrições de reuniões, com pontos principais, tópicos, decisões, tarefas, perguntas abertas e próximos passos.
 - `pragmatic-planning`: planejamento direto e amigável para TDAH, ajudando a transformar ideias confusas em próximas ações claras.
 
@@ -233,6 +237,7 @@ Depois da instalação, peça normalmente ao seu assistente:
 
 - "Revise este PR."
 - "Faça uma revisão de código deste diff."
+- "Remova os vícios de linguagem de LLM deste rascunho."
 - "Resuma esta transcrição de reunião em tópicos, decisões e tarefas."
 - "Me ajude a transformar essas ideias em um plano."
 - "Quebre esse projeto em próximas ações simples."
@@ -245,6 +250,7 @@ Cada skill fica em uma pasta própria com um arquivo `SKILL.md`:
 
 ```text
 code-review/SKILL.md
+llm-style-cleanup/SKILL.md
 meeting-transcript-summary/SKILL.md
 pragmatic-planning/SKILL.md
 ```
