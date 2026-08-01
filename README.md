@@ -19,12 +19,66 @@ These skills are practical, direct, and provider-agnostic. They avoid depending 
 
 Clone this repository into a directory your AI assistant can read.
 
+### Claude
+
+If your Claude client supports custom skills from `~/.claude/skills`, clone this repository there:
+
+```bash
+mkdir -p ~/.claude/skills
+git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git ~/.claude/skills/igoralbuquerqueskills
+```
+
+Restart Claude after installing so it can reload the skills.
+
+### Claude Code
+
+Claude Code can use skills from `~/.claude/skills`:
+
+```bash
+mkdir -p ~/.claude/skills
+git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git ~/.claude/skills/igoralbuquerqueskills
+```
+
+Then restart Claude Code and ask for the task normally, for example: "Review this PR" or "Help me plan this project".
+
+### ChatGPT
+
+ChatGPT does not automatically load local `SKILL.md` folders in every environment. You can still use these skills as reusable instructions:
+
+```bash
+git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git
+```
+
+Then copy the content of the skill you want into your ChatGPT instructions, a project instruction, or the start of a conversation:
+
+```text
+Use the instructions from code-review/SKILL.md to review this diff.
+```
+
+### Codex
+
+Codex environments may not automatically scan `SKILL.md` files. Clone the repository into your workspace and reference the skill file when asking for help:
+
+```bash
+git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git
+```
+
+Example prompt:
+
+```text
+Use igoralbuquerqueskills/code-review/SKILL.md as review guidance for this change.
+```
+
+### Other Assistants
+
 For assistants that scan `~/.agents/skills`:
 
 ```bash
 mkdir -p ~/.agents/skills
 git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git ~/.agents/skills/igoralbuquerqueskills
 ```
+
+### opencode
 
 If you use opencode, you can also reference this repository from your `opencode.json`:
 
@@ -95,12 +149,66 @@ As skills foram escritas para serem práticas, diretas e independentes de proved
 
 Clone este repositório em uma pasta que seu assistente de IA consiga ler.
 
+### Claude
+
+Se o seu cliente Claude suporta skills em `~/.claude/skills`, clone este repositório lá:
+
+```bash
+mkdir -p ~/.claude/skills
+git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git ~/.claude/skills/igoralbuquerqueskills
+```
+
+Reinicie o Claude depois da instalação para ele recarregar as skills.
+
+### Claude Code
+
+Claude Code pode usar skills em `~/.claude/skills`:
+
+```bash
+mkdir -p ~/.claude/skills
+git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git ~/.claude/skills/igoralbuquerqueskills
+```
+
+Depois reinicie o Claude Code e peça a tarefa normalmente, por exemplo: "Revise este PR" ou "Me ajude a planejar este projeto".
+
+### ChatGPT
+
+O ChatGPT não carrega automaticamente pastas locais com `SKILL.md` em todos os ambientes. Mesmo assim, você pode usar estas skills como instruções reutilizáveis:
+
+```bash
+git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git
+```
+
+Depois copie o conteúdo da skill desejada para as instruções do ChatGPT, instruções de projeto ou início de uma conversa:
+
+```text
+Use as instruções de code-review/SKILL.md para revisar este diff.
+```
+
+### Codex
+
+Ambientes Codex podem não escanear arquivos `SKILL.md` automaticamente. Clone o repositório no seu workspace e referencie o arquivo da skill ao pedir ajuda:
+
+```bash
+git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git
+```
+
+Exemplo de prompt:
+
+```text
+Use igoralbuquerqueskills/code-review/SKILL.md como guia de revisão para esta alteração.
+```
+
+### Outros Assistentes
+
 Para assistentes que leem skills em `~/.agents/skills`:
 
 ```bash
 mkdir -p ~/.agents/skills
 git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git ~/.agents/skills/igoralbuquerqueskills
 ```
+
+### opencode
 
 Se você usa opencode, também pode apontar para este repositório no seu `opencode.json`:
 
