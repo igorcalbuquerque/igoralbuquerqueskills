@@ -6,14 +6,14 @@ Versão em português abaixo: [Português](#português)
 
 ## English
 
-This repository contains ready-to-use skills for AI coding assistants. The goal is simple: install once and give your assistant better instructions for specific tasks, such as reviewing code or creating practical work plans.
+This repository contains ready-to-use skills for AI coding assistants. Install them once to give your assistant clearer instructions for specific tasks, such as reviewing code or creating practical work plans.
 
-These skills are practical, direct, and provider-agnostic. They avoid depending on a specific model, company, editor, or platform.
+These skills are practical, direct, and provider-agnostic. They do not depend on a specific model, company, editor, or platform.
 
 ## Available Skills
 
-- `code-review`: pragmatic code review focused on bugs, regressions, security risks, missing tests, and real maintainability issues.
-- `llm-style-cleanup`: edits AI-generated or AI-assisted text to remove LLM writing patterns, overused em dashes, generic filler, and formulaic phrasing while preserving meaning.
+- `code-review`: pragmatic code review focused on bugs, regressions, security risks, missing tests, and maintainability issues.
+- `llm-style-cleanup`: edits AI-generated or AI-assisted text to remove LLM writing patterns, overused em dashes, generic filler, and formulaic phrasing without changing the meaning.
 - `meeting-transcript-summary`: direct, ADHD-friendly meeting transcript summaries with key points, topics, decisions, action items, open questions, and next steps.
 - `pragmatic-planning`: direct, ADHD-friendly planning that turns messy ideas into clear next actions.
 
@@ -95,7 +95,7 @@ If you use opencode, you can also reference this repository from your `opencode.
 
 Restart your assistant after installing or changing skills so it reloads them.
 
-## How To Use
+## How to Use
 
 After installation, ask your assistant normally:
 
@@ -140,18 +140,18 @@ MIT. See `LICENSE`.
 
 ## Português
 
-Skills open source para assistentes de IA que suportam arquivos `SKILL.md`.
+Skills de código aberto para assistentes de IA que suportam arquivos `SKILL.md`.
 
-Este repositório reúne skills prontas para usar em assistentes de IA de programação. A ideia é simples: instalar uma vez e dar ao seu assistente instruções melhores para tarefas específicas, como revisar código ou montar planos de trabalho.
+Este repositório reúne skills prontas para uso em assistentes de IA de programação. Instale uma vez para dar ao seu assistente instruções mais claras para tarefas específicas, como revisar código ou montar planos de trabalho.
 
-As skills foram escritas para serem práticas, diretas e independentes de provedor. Elas evitam depender de um modelo, empresa, editor ou plataforma específica.
+As skills foram escritas para serem práticas, diretas e independentes de provedor. Elas não dependem de um modelo, empresa, editor ou plataforma específica.
 
 ## Skills Disponíveis
 
-- `code-review`: revisão de código pragmática, focada em bugs, regressões, riscos de segurança, testes ausentes e problemas reais de manutenção.
-- `llm-style-cleanup`: edição de textos gerados ou assistidos por IA para remover vícios de linguagem de LLM, travessões em excesso, enchimento genérico e frases formulaicas sem mudar o significado.
-- `meeting-transcript-summary`: resumo direto e amigável para TDAH de transcrições de reuniões, com pontos principais, tópicos, decisões, tarefas, perguntas abertas e próximos passos.
-- `pragmatic-planning`: planejamento direto e amigável para TDAH, ajudando a transformar ideias confusas em próximas ações claras.
+- `code-review`: revisão de código pragmática, focada em bugs, regressões, riscos de segurança, testes ausentes e problemas de manutenção.
+- `llm-style-cleanup`: edição de textos gerados ou assistidos por IA para remover vícios de linguagem de LLM, travessões em excesso, termos genéricos e frases formulaicas sem mudar o significado.
+- `meeting-transcript-summary`: resumo direto e amigável para TDAH de transcrições de reuniões, com pontos principais, tópicos, decisões, tarefas, perguntas em aberto e próximos passos.
+- `pragmatic-planning`: planejamento direto e amigável para TDAH que transforma ideias confusas em próximas ações claras.
 
 ## Como Instalar
 
@@ -195,7 +195,7 @@ Use as instruções de code-review/SKILL.md para revisar este diff.
 
 ### Codex
 
-Ambientes Codex podem não escanear arquivos `SKILL.md` automaticamente. Clone o repositório no seu workspace e referencie o arquivo da skill ao pedir ajuda:
+Ambientes Codex podem não ler arquivos `SKILL.md` automaticamente. Clone o repositório no seu workspace e referencie o arquivo da skill ao pedir ajuda:
 
 ```bash
 git clone https://github.com/igorcalbuquerque/igoralbuquerqueskills.git
