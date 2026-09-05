@@ -16,6 +16,7 @@ These skills are practical, direct, and provider-agnostic. They do not depend on
 - `llm-style-cleanup`: edits AI-generated or AI-assisted text to remove LLM writing patterns, overused em dashes, generic filler, and formulaic phrasing without changing the meaning.
 - `meeting-transcript-summary`: direct, ADHD-friendly meeting transcript summaries with key points, topics, decisions, action items, open questions, and next steps.
 - `pragmatic-planning`: direct, ADHD-friendly planning that turns messy ideas into clear next actions.
+- `professor`: pragmatic, focused, ADHD-friendly teaching that explains topics with the simplicity of teaching a 7-year-old child.
 
 ## Installation
 
@@ -105,6 +106,7 @@ After installation, ask your assistant normally:
 - "Summarize this meeting transcript into topics, decisions, and action items."
 - "Help me turn these ideas into a plan."
 - "Break this project into simple next actions."
+- "Teach me this topic like I am 7 years old."
 
 The assistant should choose the right skill when your request matches the skill description.
 
@@ -117,6 +119,7 @@ the-code-reviewer/SKILL.md
 llm-style-cleanup/SKILL.md
 meeting-transcript-summary/SKILL.md
 pragmatic-planning/SKILL.md
+professor/SKILL.md
 ```
 
 ## Contributing
@@ -152,6 +155,7 @@ As skills foram escritas para serem práticas, diretas e independentes de proved
 - `llm-style-cleanup`: edição de textos gerados ou assistidos por IA para remover vícios de linguagem de LLM, travessões em excesso, termos genéricos e frases formulaicas sem mudar o significado.
 - `meeting-transcript-summary`: resumo direto e amigável para TDAH de transcrições de reuniões, com pontos principais, tópicos, decisões, tarefas, perguntas em aberto e próximos passos.
 - `pragmatic-planning`: planejamento direto e amigável para TDAH que transforma ideias confusas em próximas ações claras.
+- `professor`: ensino pragmático, focado e amigável para TDAH que explica assuntos com a simplicidade de ensinar uma criança de 7 anos.
 
 ## Como Instalar
 
@@ -241,6 +245,7 @@ Depois da instalação, peça normalmente ao seu assistente:
 - "Resuma esta transcrição de reunião em tópicos, decisões e tarefas."
 - "Me ajude a transformar essas ideias em um plano."
 - "Quebre esse projeto em próximas ações simples."
+- "Me ensine este assunto como se eu tivesse 7 anos."
 
 O assistente deve escolher a skill certa quando o pedido combinar com a descrição dela.
 
@@ -253,6 +258,7 @@ the-code-reviewer/SKILL.md
 llm-style-cleanup/SKILL.md
 meeting-transcript-summary/SKILL.md
 pragmatic-planning/SKILL.md
+professor/SKILL.md
 ```
 
 ## Contribuindo
