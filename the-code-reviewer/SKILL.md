@@ -1,6 +1,6 @@
 ---
 name: the-code-reviewer
-description: Use when reviewing code changes, pull requests, diffs, commits, or implementation patches for bugs, regressions, security risks, missing tests, maintainability issues, and explicit merge-readiness decisions with blocking findings clearly identified.
+description: Use when reviewing code changes, pull requests, diffs, commits, or implementation patches for bugs, regressions, security risks, missing tests, maintainability issues, and explicit merge-readiness decisions with blocking findings clearly identified, and when writing or posting that review as a pull request comment.
 ---
 
 # The Code Reviewer
@@ -100,6 +100,48 @@ Nothing else follows. No summary, open questions, testing notes, residual risks,
 ### Detail on demand
 
 When the user asks for more ("explain finding 2", "show the full list"), expand only what was asked: evidence, reproduction steps, code, alternatives.
+
+## PR Comment
+
+When the user asks you to write or post the review on the pull request, the reader changes. The review above is a report for the person deciding. The comment is a short message to the author, written the way a colleague talks after reading the code. Keep the same decision and the same findings: the comment adds nothing the review did not find.
+
+```markdown
+I went through the PR and found two things to fix before the merge.
+
+1. **Anyone signed in can see another account's invoice** (`src/api/invoices.ts:84`)
+   The page loads the invoice without checking who owns it, so changing the number in the address shows someone else's. Checking the owner before answering fixes it.
+
+2. **A label with only spaces shows an empty tooltip** (`src/ui/tooltip.ts:12`)
+   Trimming the label before the check fixes it.
+```
+
+### Shape
+
+- Open like a person, in one or two short sentences: you looked at the PR, how many things you found, and that they are to be fixed before the merge. If the pull request is already merged, say the fixes go in a new PR. With nothing to report, say it can be merged, and that is the whole comment.
+- No `Review Decision` or `Findings` headings, no `READY` or `BLOCKED`, no severity labels.
+- Everything in the comment is to be fixed in this PR. Do not split the findings into required and optional, and do not use groups or labels for them. A finding not worth fixing now stays out of the comment.
+- Number the findings, so the author can answer "fixed 2".
+- Each finding has a bold title, the location in parentheses, and one or two short sentences: what goes wrong and how to fix it. The title says what goes wrong in everyday words, not the name of a bug category.
+- Write the body about behavior, not code. Leave function, variable, header, and column names out of it unless the fix cannot be said without one. The location already points to the code.
+- Do not say how you found or tested a problem ("I ran", "I reproduced", "in the browser"). State what happens. If a finding depends on something you could not check, say so in a few words inside that finding.
+- No closing paragraph. The comment ends with the last finding.
+- The limits of the review still hold: one screen, no tables, code blocks or quoted diff.
+
+### Voice
+
+- Write the whole comment in the language of the pull request conversation. Do not leave English words in a comment written in another language.
+- Sound like a colleague talking, not like a report: simple words, the first person in the opening ("I went through the PR"), no jargon the author would not say out loud.
+- Talk about the code, not about the author: "the page does not check", never "you forgot to check".
+- State the fix as a plain fact ("Trimming the label fixes it"). Do not give orders and do not hedge ("maybe consider", "it might be worth").
+- One idea per sentence. No em dashes and no semicolon chains: use a period, a comma, or a colon.
+- No courtesy at the start or end ("Great work", "Thanks for the PR", "Hope this helps", "Let me know if you have questions"). No intensifiers ("exactly", "precisely", "really"). No praise unless it is specific and changes what the author should do.
+- Read the comment once as the author before finishing. Cut every word that does not help them fix the code.
+
+### Publishing
+
+- Post only when the user asked for it. Otherwise show the comment as your answer and stop.
+- Post it as a plain comment. Approving or requesting changes is the user's decision, so do it only when they say so.
+- When the review changes after you posted, edit that comment instead of adding a second one.
 
 ## Review Rules
 
