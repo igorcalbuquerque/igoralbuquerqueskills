@@ -18,6 +18,8 @@ These skills are practical, direct, and provider-agnostic. They do not depend on
 - `meeting-transcript-summary`: direct, ADHD-friendly meeting transcript summaries with key points, topics, decisions, action items, open questions, and next steps.
 - `pragmatic-planning`: direct, ADHD-friendly planning that turns messy ideas into clear next actions.
 - `professor`: pragmatic, focused, ADHD-friendly teaching that explains topics with the simplicity of teaching a 7-year-old child.
+- `postmortem`: blameless incident postmortems with a sourced timeline, impact, root cause chain, and actions that change the system so the failure does not come back.
+- `dependency-upgrade`: library and tool upgrades in small verified steps, based on the real changelog, with the lockfile kept and a one-line rollback.
 
 ## Installation
 
@@ -109,6 +111,8 @@ After installation, ask your assistant normally:
 - "Help me turn these ideas into a plan."
 - "Break this project into simple next actions."
 - "Teach me this topic like I am 7 years old."
+- "Write the postmortem for yesterday's outage."
+- "Upgrade eslint to the latest major."
 
 The assistant should choose the right skill when your request matches the skill description.
 
@@ -123,6 +127,8 @@ llm-style-cleanup/SKILL.md
 meeting-transcript-summary/SKILL.md
 pragmatic-planning/SKILL.md
 professor/SKILL.md
+postmortem/SKILL.md
+dependency-upgrade/SKILL.md
 ```
 
 ## Contributing
@@ -160,6 +166,8 @@ As skills foram escritas para serem práticas, diretas e independentes de proved
 - `meeting-transcript-summary`: resumo direto e amigável para TDAH de transcrições de reuniões, com pontos principais, tópicos, decisões, tarefas, perguntas em aberto e próximos passos.
 - `pragmatic-planning`: planejamento direto e amigável para TDAH que transforma ideias confusas em próximas ações claras.
 - `professor`: ensino pragmático, focado e amigável para TDAH que explica assuntos com a simplicidade de ensinar uma criança de 7 anos.
+- `postmortem`: postmortem de incidente sem culpados, com linha do tempo baseada em fontes, impacto, cadeia de causa raiz e ações que mudam o sistema para a falha não voltar.
+- `dependency-upgrade`: atualização de bibliotecas e ferramentas em passos pequenos e verificados, baseada no changelog real, mantendo o lockfile e com rollback de uma linha.
 
 ## Como Instalar
 
@@ -251,6 +259,8 @@ Depois da instalação, peça normalmente ao seu assistente:
 - "Me ajude a transformar essas ideias em um plano."
 - "Quebre esse projeto em próximas ações simples."
 - "Me ensine este assunto como se eu tivesse 7 anos."
+- "Escreva o postmortem da queda de ontem."
+- "Atualize o eslint para a última major."
 
 O assistente deve escolher a skill certa quando o pedido combinar com a descrição dela.
 
@@ -265,6 +275,8 @@ llm-style-cleanup/SKILL.md
 meeting-transcript-summary/SKILL.md
 pragmatic-planning/SKILL.md
 professor/SKILL.md
+postmortem/SKILL.md
+dependency-upgrade/SKILL.md
 ```
 
 ## Contribuindo
