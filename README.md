@@ -13,6 +13,7 @@ These skills are practical, direct, and provider-agnostic. They do not depend on
 ## Available Skills
 
 - `the-code-reviewer`: pragmatic code review focused on bugs, regressions, security risks, missing tests, and maintainability issues.
+- `security-review`: security review that finds exploitable vulnerabilities and proves each one with an attack path from attacker input to the damaging code.
 - `llm-style-cleanup`: edits AI-generated or AI-assisted text to remove LLM writing patterns, overused em dashes, generic filler, and formulaic phrasing without changing the meaning.
 - `meeting-transcript-summary`: direct, ADHD-friendly meeting transcript summaries with key points, topics, decisions, action items, open questions, and next steps.
 - `pragmatic-planning`: direct, ADHD-friendly planning that turns messy ideas into clear next actions.
@@ -102,6 +103,7 @@ After installation, ask your assistant normally:
 
 - "Review this PR."
 - "Do a code review of this diff."
+- "Do a security review of this repository."
 - "Remove the LLM-style wording from this draft."
 - "Summarize this meeting transcript into topics, decisions, and action items."
 - "Help me turn these ideas into a plan."
@@ -116,6 +118,7 @@ Each skill lives in its own directory with a `SKILL.md` file:
 
 ```text
 the-code-reviewer/SKILL.md
+security-review/SKILL.md
 llm-style-cleanup/SKILL.md
 meeting-transcript-summary/SKILL.md
 pragmatic-planning/SKILL.md
@@ -152,6 +155,7 @@ As skills foram escritas para serem práticas, diretas e independentes de proved
 ## Skills Disponíveis
 
 - `the-code-reviewer`: revisão de código pragmática, focada em bugs, regressões, riscos de segurança, testes ausentes e problemas de manutenção.
+- `security-review`: revisão de segurança que encontra vulnerabilidades exploráveis e prova cada uma com um caminho de ataque, da entrada do atacante até o código que causa o dano.
 - `llm-style-cleanup`: edição de textos gerados ou assistidos por IA para remover vícios de linguagem de LLM, travessões em excesso, termos genéricos e frases formulaicas sem mudar o significado.
 - `meeting-transcript-summary`: resumo direto e amigável para TDAH de transcrições de reuniões, com pontos principais, tópicos, decisões, tarefas, perguntas em aberto e próximos passos.
 - `pragmatic-planning`: planejamento direto e amigável para TDAH que transforma ideias confusas em próximas ações claras.
@@ -241,6 +245,7 @@ Depois da instalação, peça normalmente ao seu assistente:
 
 - "Revise este PR."
 - "Faça uma revisão de código deste diff."
+- "Faça uma revisão de segurança deste repositório."
 - "Remova os vícios de linguagem de LLM deste rascunho."
 - "Resuma esta transcrição de reunião em tópicos, decisões e tarefas."
 - "Me ajude a transformar essas ideias em um plano."
@@ -255,6 +260,7 @@ Cada skill fica em uma pasta própria com um arquivo `SKILL.md`:
 
 ```text
 the-code-reviewer/SKILL.md
+security-review/SKILL.md
 llm-style-cleanup/SKILL.md
 meeting-transcript-summary/SKILL.md
 pragmatic-planning/SKILL.md
